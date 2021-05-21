@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import {MatGridListModule} from '@angular/material/grid-list';
 
 // Components
@@ -45,7 +45,9 @@ import { DeleteUserComponent, EditUserComponent } from './components/edit-user/e
     MatDividerModule,
     MatGridListModule,
   ],
-  providers: [],
+  providers: [
+    MatDialog
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
