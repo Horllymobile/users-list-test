@@ -1,15 +1,15 @@
 <div class="container">
   <div class="row">
     <div class="col l3"></div>
-    <div class="col l6">
+    <div class="col l6 s12">
       <ul class="collection with-header" *ngFor="let user of users">
         <li class="collection-item item" >
           <div class="row">
             <div class="col l7 s5">{{ user.name }}</div>
-            <div class="col l2 s2">
+            <div class="col l2 s1">
               <a type="button" (click)="openEditDialog(user)" class="waves-effect waves-light btn-small dark-text darken-4">Edit</a>
             </div>
-            <div class="col l2 s3">
+            <div class="col l2 s2 push-s2">
               <a type="button" (click)="openDeleteDialog(user.id)" class="waves-effect waves-light btn-small red ligthen-3">Delete</a>
             </div>
           </div>

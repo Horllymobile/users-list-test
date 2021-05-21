@@ -58,7 +58,7 @@ export class AppComponent implements OnInit, OnDestroy{
       data => {
         setTimeout(()=>{
           this.usersList = data.reverse();
-        },1000)
+        },500)
         // console.log(data);
       },
       err => {

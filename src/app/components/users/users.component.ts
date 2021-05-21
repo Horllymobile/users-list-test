@@ -22,10 +22,7 @@ export class UsersComponent implements OnInit {
       data: { ...user }
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      // this.animal = result;
-    });
+    dialogRef.afterClosed().subscribe(result => {});
   }
 
   openDeleteDialog(id: number): void {
@@ -33,11 +30,7 @@ export class UsersComponent implements OnInit {
       width: '250px',
       data: { id }
     });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      // this.animal = result;
-    });
+    dialogRef.afterClosed().subscribe(result => {});
   }
 
   open(user){

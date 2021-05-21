@@ -61,16 +61,12 @@ export class DeleteUserComponent implements OnInit {
   ){}
 
   onDelete(): void {
-
     this.userService.deleteUser(this.data.id);
     this.dialogRef.close();
-
   }
 
   onCancel(){
-
     this.dialogRef.close();
-
   }
   ngOnInit(){}
 }

@@ -1,7 +1,16 @@
 <app-add-user (newUser)="save($event)"></app-add-user>
 <mat-divider></mat-divider>
-<div class="button-div" *ngIf="usersList?.length > 1">
-  <button (click)="openEditAllDialog()" type="button" name="action" class="btn waves-effect waves-light ">Edit all</button>
-  <button (click)="openDeleteAllDialog()" type="button" name="action" class="btn waves-effect waves-light ">Delete all</button>
+<div class="container btn-container">
+  <div class="row" *ngIf="usersList?.length > 1">
+    <div class="col l3"></div>
+    <div class="col l6">
+      <button (click)="openEditAllDialog()" type="button"
+       name="action" class="btn waves-effect waves-light ">Edit all</button>
+
+      <button (click)="openDeleteAllDialog()" type="button"
+      name="action" class="btn waves-effect waves-light ">Delete all</button>
+    </div>
+    <div class="col l3"></div>
+  </div>
 </div>
 <app-users [users]="usersList"></app-users>
