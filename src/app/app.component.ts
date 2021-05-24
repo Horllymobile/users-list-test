@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy, Inject, Input } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Observable, Observer } from 'rxjs';
 import { User } from './models/user';
 import { UserService } from './service/user.service';
 

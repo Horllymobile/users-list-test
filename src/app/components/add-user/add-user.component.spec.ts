@@ -1,6 +1,5 @@
 import { NO_ERRORS_SCHEMA } from '@angular/compiler';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AddUserComponent } from './add-user.component';
 
 describe('AddUserComponent', () => {
@@ -31,9 +30,9 @@ describe('AddUserComponent', () => {
       expect(value).toBe('Submit');
   });
 
-  it('should label of full name', () => {
-    const button = fixture.nativeElement.querySelector('label');
-    const value = button.innerText;
+  it('should have label of full name', () => {
+    const label = fixture.nativeElement.querySelector('label');
+    const value = label.innerText;
     expect(value).toBe('Full Name');
   })
 });

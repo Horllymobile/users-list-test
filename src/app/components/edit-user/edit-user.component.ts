@@ -18,7 +18,6 @@ interface DialogData {
 })
 export class EditUserComponent implements OnInit {
 
-  @Input() user: User
 
   constructor(
     private userService: UserService,

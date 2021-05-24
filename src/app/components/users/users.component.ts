@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 import { DeleteUserComponent, EditUserComponent } from '../edit-user/edit-user.component';
@@ -11,7 +11,6 @@ import { User } from './../../models/user';
 export class UsersComponent implements OnInit {
   @Input() users: User[] | null = null;
 
-  @Output() user = new EventEmitter();
   constructor(
     private dialog: MatDialog,
   ) { }
@@ -33,10 +32,6 @@ export class UsersComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {});
   }
 
-  open(user){
-    console.log('working');
-    this.user.emit(user);
-  }
 
   ngOnInit(): void {
   }
